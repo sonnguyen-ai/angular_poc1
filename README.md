@@ -1,59 +1,59 @@
-# TodoApp
+# todo-app
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
+A simple todo application built with Angular.
 
-## Development server
+## Table of Contents
 
-To start a local development server, run:
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Running the app](#running-the-app)
+- [Project Structure](#project-structure)
+- [Dependencies](#dependencies)
+
+## Prerequisites
+
+- Node.js (version 18 or higher)
+- npm (Node Package Manager)
+
+## Installation
+
+Clone the repository and install the dependencies:
+
+```bash
+npm install
+```
+
+## Running the app
+
+To start the development server, run:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open your browser and navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Project Structure
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+The project structure is based on the standard Angular CLI project structure:
 
-```bash
-ng generate component component-name
-```
+- `src/app`: Contains the application's components, modules, and services.
+- `src/app/todo-list`: Contains the todo list component.
+- `src/app/models`: Contains the todo model.
+- `src/`: Contains the main application files.
+- `angular.json`: Configuration file for Angular CLI.
+- `package.json`: Contains the project's dependencies and scripts.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Dependencies
 
-```bash
-ng generate --help
-```
+Major dependencies used in this project:
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- @angular/core
+- @angular/common
+- @angular/compiler
+- @angular/forms
+- @angular/platform-browser
+- @angular/router
+- rxjs
+- tslib
+- zone.js
