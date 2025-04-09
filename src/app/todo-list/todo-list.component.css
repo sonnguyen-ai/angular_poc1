@@ -1,0 +1,117 @@
+/* src/app/todo-list/todo-list.component.css */
+.todo-app {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .add-todo {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .add-todo input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+  }
+  
+  .add-todo button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .filters button {
+    margin: 0 5px;
+    padding: 8px 12px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .filters button.active {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .todo-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .todo-stats button {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: underline;
+  }
+  
+  .todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .todo-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .todo-item input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .todo-item span {
+    flex: 1;
+  }
+  
+  .completed .todo-item span {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .delete-btn {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 5px;
+  }
+  
+  .empty-message {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+    padding: 20px 0;
+  }

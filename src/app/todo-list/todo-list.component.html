@@ -1,0 +1,54 @@
+<!-- src/app/todo-list/todo-list.component.html -->
+<div class="todo-app">
+    <h1>Todo List</h1>
+    
+    <div class="add-todo">
+      <input 
+        type="text" 
+        [(ngModel)]="newTodoText" 
+        placeholder="What needs to be done?"
+        (keyup.enter)="addTodo()"
+      />
+      <button (click)="addTodo()">Add</button>
+    </div>
+    
+    <div class="filters">
+      <button 
+        [class.active]="filter === 'all'"
+        (click)="setFilter('all')"
+      >All</button>
+      <button 
+        [class.active]="filter === 'active'"
+        (click)="setFilter('active')"
+      >Active</button>
+      <button 
+        [class.active]="filter === 'completed'"
+        (click)="setFilter('completed')"
+      >Completed</button>
+    </div>
+    
+    <div class="todo-stats">
+      <span>{{ activeTodosCount }} active</span>
+      <span>{{ completedTodosCount }} completed</span>
+      <button *ngIf="completedTodosCount > 0" (click)="clearCompleted()">
+        Clear Completed
+      </button>
+    </div>
+    
+    <ul class="todo-list">
+      <li *ngFor="let todo of filteredTodos" [class.completed]="todo.completed">
+        <div class="todo-item">
+          <input
+            type="checkbox"
+            [checked]="todo.completed"
+            (change)="toggleTodo(todo)"
+          />
+          <span>{{ todo.text }}</span>
+          <button class="delete-btn" (click)="deleteTodo(todo.id)">×</button>
+        </div>
+      </li>
+      <li *ngIf="filteredTodos.length === 0" class="empty-message">
+        No todos to display
+      </li>
+    </ul>
+  </div>
