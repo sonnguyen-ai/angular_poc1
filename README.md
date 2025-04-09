@@ -1,6 +1,7 @@
 # todo-app
 
 A simple todo application built with Angular.
+![Uploading image.png…]()
 
 ## Table of Contents
 
