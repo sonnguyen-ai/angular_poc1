@@ -57,3 +57,5 @@ Major dependencies used in this project:
 - rxjs
 - tslib
 - zone.js
+
+**Note to Developers:** This project is built using Angular 19. Ensure you have a solid understanding of Angular concepts and best practices before contributing.
